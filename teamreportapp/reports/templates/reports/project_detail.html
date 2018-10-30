@@ -1,0 +1,7 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>{{ project.name }}</h1>
+  <p><strong>Project Status:</strong> {{ project.get_status_display }}</p>
+  <p><a href="{% url 'project_update' pk=project.id %}">Edit</a> | <a href="{% url 'project_delete' pk=project.id %}">Delete</a></p>
+{% endblock %}

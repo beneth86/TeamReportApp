@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>TeamReportApp Home</h1>
+  <p>Welcome to TeamReportApp, a website that lets you track and report on your team's projects.</p>
+  <h2>Current projects:</h2>
+  <ul>
+    <li><strong>Total Projects:</strong> {{ num_projects }}</li>
+    <li><strong>Queued Projects:</strong> {{ queued_projects }}</li>
+    <li><strong>In-Progress Projects:</strong> {{ inprogress_projects }}</li>
+    <li><strong>Completed Projects:</strong> {{ completed_projects }}</li>
+  </ul>
+{% endblock %}
